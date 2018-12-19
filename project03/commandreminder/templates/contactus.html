@@ -1,0 +1,23 @@
+
+
+{% extends 'nav.html' %}
+
+{% block content %}
+
+<h1><i>This is Contact us page</i></h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque quas magnam ratione ea consectetur eligendi neque. Perspiciatis expedita eos fuga delectus eius placeat amet sequi aliquid beatae velit. Nobis labore consectetur harum eius adipisci molestias dolores at reiciendis et ex consequatur fugiat tempora, beatae, eos! Quam eum, dicta pariatur accusantium.</p>
+
+<p>Adddresss</p>
+<p>Email</p>
+<p>Contact number</p>
+
+
+<ul>
+{% for c in object_list %}
+  <li>{{ c }}</li>
+  {% endfor %}
+</ul>
+
+
+
+{% endblock %}

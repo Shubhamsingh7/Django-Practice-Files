@@ -1,0 +1,21 @@
+{% extends 'nav.html' %}
+
+
+{% block content %}
+
+
+
+
+  <h1><i>This is About us page</i></h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta, recusandae nihil dolor at laborum autem voluptate aperiam accusamus placeat inventore labore, rerum odit sapiente eligendi, aut temporibus molestiae. At aperiam, accusantium praesentium optio laboriosam perspiciatis quae aspernatur! Explicabo quo, totam, ullam, repudiandae natus <br> voluptatum sit aut necessitatibus accusantium quibusdam similique, nostrum hic harum dolore veritatis repellat. Eum repellendus nobis laudantium dicta vitae veritatis maxime dolorum, quae, beatae quidem minus eius impedit provident <br> fuga unde quis obcaecati odit labore. Repellat <br> laudantium recusandae in voluptas voluptate. Quaerat deleniti aperiam eveniet maiores mollitia at! Consequuntur eaque inventore dolore. Iure quasi voluptate illo numquam.</p>
+
+
+  <ul>
+  {% for c in object_list %}
+    <li>{{ c }}</li>
+    {% endfor %}
+  </ul>
+
+
+
+{% endblock %}
